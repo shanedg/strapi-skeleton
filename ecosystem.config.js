@@ -9,8 +9,12 @@ module.exports = {
     autorestart: true,
     watch: false,
     max_memory_restart: '1G',
+    append_env_to_name: true,
     env: {
       NODE_ENV: 'development'
+    },
+    env_staging: {
+      NODE_ENV: 'staging'
     },
     env_production: {
       NODE_ENV: 'production'
