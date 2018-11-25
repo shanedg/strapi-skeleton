@@ -9,6 +9,7 @@ COPY public public/
 COPY package.json .
 COPY server.js .
 COPY ecosystem.config.js .
+COPY favicon.ico .
 
 # Install app dependencies
 ENV NPM_CONFIG_LOGLEVEL warn
@@ -23,4 +24,4 @@ EXPOSE 1337
 # Show current folder structure in logs
 RUN ls -al -R
 
-CMD [ "pm2-runtime", "start", "ecosystem.config.js" ]
+CMD [ "pm2-runtime", "start", "ecosystem.config.js", "--env", "localdocker" ]
