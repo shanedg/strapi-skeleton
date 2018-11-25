@@ -13,6 +13,9 @@ module.exports = {
     env: {
       NODE_ENV: 'development'
     },
+    env_localdocker: {
+      NODE_ENV: 'localdocker'
+    },
     env_staging: {
       NODE_ENV: 'staging'
     },
