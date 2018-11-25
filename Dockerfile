@@ -9,6 +9,7 @@ COPY public public/
 COPY package.json .
 COPY server.js .
 COPY ecosystem.config.js .
+COPY favicon.ico .
 
 # Install app dependencies
 ENV NPM_CONFIG_LOGLEVEL warn
