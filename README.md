@@ -23,30 +23,30 @@ CREATE DATABASE "local-strapi";
 ## docker
 ### localhost
 #### create docker bridge network for strapi and db to communicate over: 
-`docker network create --driver bridge custom-bridge`
+`docker network create --driver bridge use-custom-bridge-ok`
 
 #### postgres:
 ##### get/run [postgres image](https://hub.docker.com/_/postgres/)/container: 
 `docker pull postgres`
-`docker run -d --name some-postgres --net custom-bridge postgres`
+`docker run -d --name use-postgres-ok --net use-custom-bridge-ok postgres`
 
 ##### psql to configure postgres db for strapi
-`docker run -it --rm --net custom-bridge postgres psql -h some-postgres -U postgres`
+`docker run -it --rm --net use-custom-bridge-ok postgres psql -h use-postgres-ok -U postgres`
 ```
-CREATE USER "strapi-user" WITH PASSWORD 'strapi-password';
-CREATE DATABASE "some-strapi";
-ALTER DATABASE "some-strapi" OWNER TO "strapi-user";
-GRANT ALL PRIVILEGES ON DATABASE "some-strapi" TO "strapi-user";
+CREATE USER "strapi-user-ok" WITH PASSWORD 'strapi-password-alright';
+CREATE DATABASE "strapi-db-ok";
+ALTER DATABASE "strapi-db-ok" OWNER TO "strapi-user-ok";
+GRANT ALL PRIVILEGES ON DATABASE "strapi-db-ok" TO "strapi-user-ok";
 ```
 
 #### build strapi image: 
-`docker build -t strapi-skeleton .`
+`docker build -t strapi-image-ok .`
 
 #### run strapi container, connecting to custom bridge and exposing port 1337 on container as port 1337 on localhost: 
-`docker run -d -p 1337:1337 --net custom-bridge --name some-strapi strapi-skeleton`
+`docker run -d -p 1337:1337 --net use-custom-bridge-ok --name strapi-container-ok strapi-image-ok`
 
 #### view strapi application logs in container: 
-`docker exec -it some-strapi pm2 log`
+`docker exec -it strapi-container-ok pm2 log`
 
 #### view strapi app: 
 `localhost:1337`
@@ -59,7 +59,7 @@ TODO:
 TODO: 
 
 <!-- ## misc
-`docker run -p 80:1337 strapi-skeleton` (standalone, for posterity, does not run because can't link up to db)
+`docker run -p 80:1337 strapi-skeleton` (standalone, does not run because can't link up to db)
 `docker exec -it some-strapi pm2 log`
 `docker exec -it some-strapi pm2 ls`
 `docker exec -it some-strapi pm2 monit` -->

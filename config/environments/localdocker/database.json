@@ -5,12 +5,12 @@
       "connector": "strapi-hook-bookshelf",
       "settings": {
         "client": "postgres",
-        "host": "some-postgres",
+        "host": "use-postgres-ok",
         "srv": false,
         "port": 5432,
-        "database": "some-strapi",
-        "username": "strapi-user",
-        "password": "strapi-password"
+        "database": "strapi-db-ok",
+        "username": "strapi-user-ok",
+        "password": "strapi-password-alright"
       },
       "options": {
         "ssl": false
