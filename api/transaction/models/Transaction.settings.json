@@ -17,7 +17,7 @@
     },
     "amount": {
       "default": "",
-      "type": "float"
+      "type": "decimal"
     },
     "details": {
       "default": "",
