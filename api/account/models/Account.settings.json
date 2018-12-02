@@ -18,6 +18,20 @@
     "details": {
       "default": "",
       "type": "text"
+    },
+    "type": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "checking",
+        "savings",
+        "credit",
+        "loan"
+      ]
+    },
+    "initialBalance": {
+      "default": "",
+      "type": "float"
     }
   }
 }
