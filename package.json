@@ -19,12 +19,12 @@
     "eslint-plugin-react": "^7.7.0"
   },
   "dependencies": {
-    "lodash": "^4.17.5",
-    "strapi": "3.0.0-alpha.14.5",
-    "strapi-hook-bookshelf": "3.0.0-alpha.14.5",
-    "strapi-hook-knex": "3.0.0-alpha.14.5",
     "knex": "latest",
-    "pg": "7.6.1"
+    "lodash": "^4.17.5",
+    "pg": "7.6.1",
+    "strapi": "^3.0.0-alpha.15",
+    "strapi-hook-bookshelf": "^3.0.0-alpha.15",
+    "strapi-hook-knex": "^3.0.0-alpha.15"
   },
   "author": {
     "name": "shane",
