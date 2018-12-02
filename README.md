@@ -17,7 +17,7 @@ A quick description of strapi-skeleton.
 CREATE DATABASE "local-strapi";
 GRANT ALL PRIVILEGES ON DATABASE "local-strapi" TO shane;
 ```
-Note where mine is `shane`, your default user will most likely be your username.
+Note where mine is `shane`, your default user will most likely be your username. Be sure to update that value in `config/environments/development/database.json` under `connections.default.settings.username`.
 
 If you suspect your postgres database may be corrupt or otherwise misconfigured, run the following and then re-run the commands above to start fresh.
 ```
