@@ -18,6 +18,31 @@
     "amount": {
       "default": "",
       "type": "float"
+    },
+    "details": {
+      "default": "",
+      "type": "text"
+    },
+    "due": {
+      "default": "",
+      "type": "date"
+    },
+    "scheduled": {
+      "default": "",
+      "type": "date"
+    },
+    "effective": {
+      "default": "",
+      "type": "date"
+    },
+    "fromAccount": {
+      "model": "account"
+    },
+    "toAccount": {
+      "model": "account"
+    },
+    "bucket": {
+      "model": "bucket"
     }
   }
 }
