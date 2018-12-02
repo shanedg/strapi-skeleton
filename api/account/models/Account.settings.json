@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "accounts",
+  "info": {
+    "name": "account",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "details": {
+      "default": "",
+      "type": "text"
+    }
+  }
+}

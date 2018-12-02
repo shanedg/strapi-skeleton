@@ -4,10 +4,22 @@ module.exports = {
     script: 'server.js',
 
     // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
-    // args: 'one two',
-    instances: 2,
+    instances: 1,
     autorestart: true,
-    watch: false,
+    watch: true,
+    ignore_watch: [
+      'admin',
+      'plugins',
+      '.editorconfig',
+      '.eslintignore',
+      '.eslintrc',
+      '.gitignore',
+      '.git',
+      '.npmignore',
+      'Dockerfile',
+      'ecosystem.config.js',
+      'README.md'
+    ],
     max_memory_restart: '1G',
     append_env_to_name: true,
     env: {

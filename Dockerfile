@@ -1,5 +1,7 @@
 FROM node:alpine
 
+# TODO: bring down image size with multi stage container build?
+
 # Bundle APP files
 COPY admin admin/
 COPY api api/

@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "transactions",
+  "info": {
+    "name": "transaction",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "amount": {
+      "default": "",
+      "type": "float"
+    }
+  }
+}

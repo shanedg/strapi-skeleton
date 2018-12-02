@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/buckets",
+      "handler": "Bucket.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/buckets/count",
+      "handler": "Bucket.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/buckets/:id",
+      "handler": "Bucket.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/buckets",
+      "handler": "Bucket.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/buckets/:id",
+      "handler": "Bucket.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/buckets/:id",
+      "handler": "Bucket.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/buckets/:id/relationships/:relation",
+      "handler": "Bucket.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/buckets/:id/relationships/:relation",
+      "handler": "Bucket.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/buckets/:id/relationships/:relation",
+      "handler": "Bucket.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
