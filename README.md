@@ -15,6 +15,13 @@ A quick description of strapi-skeleton.
 #### psql
 ```
 CREATE DATABASE "local-strapi";
+GRANT ALL PRIVILEGES ON DATABASE "local-strapi" TO shane;
+```
+Note where mine is `shane`, your default user will most likely be your username.
+
+If you suspect your postgres database may be corrupt or otherwise misconfigured, run the following and then re-run the commands above to start fresh.
+```
+DROP DATABASE IF EXISTS "local-strapi";
 ```
 
 #### start strapi

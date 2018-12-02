@@ -9,7 +9,7 @@
         "srv": false,
         "port": 5432,
         "database": "local-strapi",
-        "username": "",
+        "username": "shane",
         "password": ""
       },
       "options": {
