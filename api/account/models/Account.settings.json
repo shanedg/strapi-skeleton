@@ -31,7 +31,7 @@
     },
     "initialBalance": {
       "default": "",
-      "type": "float"
+      "type": "decimal"
     }
   }
 }
