@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/paychecks",
+      "handler": "Paycheck.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/paychecks/count",
+      "handler": "Paycheck.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/paychecks/:id",
+      "handler": "Paycheck.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/paychecks",
+      "handler": "Paycheck.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/paychecks/:id",
+      "handler": "Paycheck.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/paychecks/:id",
+      "handler": "Paycheck.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/paychecks/:id/relationships/:relation",
+      "handler": "Paycheck.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/paychecks/:id/relationships/:relation",
+      "handler": "Paycheck.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/paychecks/:id/relationships/:relation",
+      "handler": "Paycheck.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

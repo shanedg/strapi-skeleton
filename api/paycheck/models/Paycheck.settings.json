@@ -1,0 +1,19 @@
+{
+  "connection": "default",
+  "collectionName": "paychecks",
+  "info": {
+    "name": "paycheck",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}
