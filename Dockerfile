@@ -2,6 +2,9 @@ FROM node:alpine
 
 # TODO: bring down image size with multi stage container build?
 
+# Install pm2
+RUN npm install pm2 -g
+
 WORKDIR /app/strapi-skeleton
 
 # Bundle APP files
@@ -20,9 +23,6 @@ COPY favicon.ico .
 ENV NPM_CONFIG_LOGLEVEL warn
 # RUN npm install --production
 RUN npm ci --production
-
-# Install pm2
-RUN npm install pm2 -g
 
 # Expose the listening port of your app
 EXPOSE 1337
