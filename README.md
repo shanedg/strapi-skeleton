@@ -34,7 +34,20 @@ DROP DATABASE IF EXISTS "local-strapi";
 
 #### start strapi
 ```bash
-pm2-runtime start ecosystem.config.js --only strapi-skeleton-dev
+pm2 start ecosystem.config.js --only strapi-skeleton-dev
+```
+
+#### view strapi app: 
+```bash
+localhost:1337
+localhost:1337/admin
+```
+
+#### teardown
+```bash
+pm2 stop strapi-skeleton-dev
+brew services stop postgresql
+pm2 kill
 ```
 
 ## docker
@@ -68,7 +81,7 @@ ALTER USER "strapi-user-ok" WITH SUPERUSER;
 docker build -t strapi-image-ok .
 ```
 
-#### run strapi container, connecting to custom bridge and exposing port 1337 on container as port 1337 on localhost: 
+#### run strapi container, connecting to custom bridge network and exposing port 1337 on container as port 1337 on localhost: 
 ```bash
 docker run -d -p 1337:1337 --net use-custom-bridge-ok --name strapi-container-ok strapi-image-ok
 ```
@@ -84,6 +97,17 @@ localhost:1337
 localhost:1337/admin
 ```
 
+#### teardown
+```bash
+docker container stop strapi-container-ok
+docker container stop use-postgres-ok
+docker container prune
+docker network rm bridge use-custom-bridge-ok
+docker network prune
+docker image rm strapi-image-ok
+docker image prune
+```
+
 ### staging
 TODO: 
 
@@ -95,7 +119,7 @@ standalone, does not run because can't link up to db:
 ```bash
 docker run -p 80:1337 strapi-skeleton
 ```
-```
+```bash
 docker exec -it some-strapi pm2 log
 docker exec -it some-strapi pm2 ls
 docker exec -it some-strapi pm2 monit
