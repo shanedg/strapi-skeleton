@@ -5,6 +5,21 @@
       "connector": "strapi-hook-bookshelf",
       "settings": {
         "client": "postgres",
+        "host": "postgres-container-ok",
+        "srv": false,
+        "port": 5432,
+        "database": "docker-db-ok",
+        "username": "docker-user-ok",
+        "password": "docker-password-alright"
+      },
+      "options": {
+        "ssl": false
+      }
+    },
+    "default__archive": {
+      "connector": "strapi-hook-bookshelf",
+      "settings": {
+        "client": "postgres",
         "host": "use-postgres-ok",
         "srv": false,
         "port": 5432,

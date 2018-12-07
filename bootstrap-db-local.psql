@@ -1,0 +1,5 @@
+CREATE DATABASE "local-db-ok";
+ALTER DATABASE "local-db-ok" OWNER TO "local-user-ok";
+CREATE USER "local-user-ok" WITH ENCRYPTED PASSWORD 'local-user-alright';
+ALTER USER "local-user-ok" WITH SUPERUSER;
+GRANT ALL PRIVILEGES ON DATABASE "local-db-ok" TO "local-user-ok";

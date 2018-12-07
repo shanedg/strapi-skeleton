@@ -8,6 +8,21 @@
         "host": "127.0.0.1",
         "srv": false,
         "port": 5432,
+        "database": "local-db-ok",
+        "username": "local-user-ok",
+        "password": "local-user-alright"
+      },
+      "options": {
+        "ssl": false
+      }
+    },
+    "default__archive": {
+      "connector": "strapi-hook-bookshelf",
+      "settings": {
+        "client": "postgres",
+        "host": "127.0.0.1",
+        "srv": false,
+        "port": 5432,
         "database": "local-strapi",
         "username": "shane",
         "password": ""
