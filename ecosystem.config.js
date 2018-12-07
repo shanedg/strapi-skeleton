@@ -38,7 +38,6 @@ module.exports = {
       NODE_ENV: 'production',
     },
     exec_mode: 'cluster',
-    trace: true,
   },
   {
     name: 'strapi-skeleton-prod',
