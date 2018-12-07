@@ -1,0 +1,5 @@
+CREATE DATABASE "docker-db-ok";
+ALTER DATABASE "docker-db-ok" OWNER TO "docker-user-ok";
+CREATE USER "docker-user-ok" WITH PASSWORD 'docker-password-alright';
+ALTER USER "docker-user-ok" WITH SUPERUSER;
+GRANT ALL PRIVILEGES ON DATABASE "docker-db-ok" TO "docker-user-ok";
