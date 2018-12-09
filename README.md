@@ -50,7 +50,8 @@ docker network create --driver bridge use-custom-bridge-ok
 ##### get/run [postgres image](https://hub.docker.com/_/postgres/)/container: 
 ```bash
 docker pull postgres
-docker run -d --name postgres-container-ok --net use-custom-bridge-ok postgres
+docker run --name postgres-container-ok --net use-custom-bridge-ok -e POSTGRES_PASSWORD=postgres-ok -d postgres
+
 ```
 
 ##### psql to configure postgres db for strapi
@@ -59,8 +60,8 @@ docker run -it --rm --net use-custom-bridge-ok postgres psql -h postgres-contain
 ```
 ```psql
 CREATE DATABASE "docker-db-ok";
-ALTER DATABASE "docker-db-ok" OWNER TO "docker-user-ok";
 CREATE USER "docker-user-ok" WITH PASSWORD 'docker-password-alright';
+ALTER DATABASE "docker-db-ok" OWNER TO "docker-user-ok";
 ALTER USER "docker-user-ok" WITH SUPERUSER;
 GRANT ALL PRIVILEGES ON DATABASE "docker-db-ok" TO "docker-user-ok";
 ```
