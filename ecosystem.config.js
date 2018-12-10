@@ -40,7 +40,7 @@ module.exports = {
     exec_mode: 'cluster',
   },
   {
-    name: 'strapi-skeleton-prod',
+    name: 'strapi-skeleton',
     script: 'server.js',
     instances: 1,
     autorestart: true,
@@ -52,16 +52,8 @@ module.exports = {
     env_production: {
       NODE_ENV: 'production',
     },
+    exec_mode: 'cluster',
   }],
 
-  deploy : {
-    production : {
-      user : 'node',
-      host : '212.83.163.1',
-      ref  : 'origin/master',
-      repo : 'git@github.com:repo.git',
-      path : '/var/www/production',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
-    }
-  }
+  deploy : {}
 };
