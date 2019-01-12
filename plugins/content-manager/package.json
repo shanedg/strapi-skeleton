@@ -1,27 +1,27 @@
 {
-  "_from": "strapi-plugin-content-manager@3.0.0-alpha.16",
-  "_id": "strapi-plugin-content-manager@3.0.0-alpha.16",
+  "_from": "strapi-plugin-content-manager@3.0.0-alpha.18",
+  "_id": "strapi-plugin-content-manager@3.0.0-alpha.18",
   "_inBundle": false,
-  "_integrity": "sha512-PaQlYtHn3UyD9+KW8S9GBEDfnKKQsY9krdU3NACALlNqtMfRf52nsqGSzrU8K8xBMW/ywm7NhM5Dr25FuwNsRQ==",
+  "_integrity": "sha512-7ZqOyJ2goZwedncJDUI08rh9bRkQdbWeKXn7l6DPE6YoZyOFbcgp8uOGGIJ3+C6EQ6GV2yi3jgJJvZlRZvoUPA==",
   "_location": "/strapi-plugin-content-manager",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "strapi-plugin-content-manager@3.0.0-alpha.16",
+    "raw": "strapi-plugin-content-manager@3.0.0-alpha.18",
     "name": "strapi-plugin-content-manager",
     "escapedName": "strapi-plugin-content-manager",
-    "rawSpec": "3.0.0-alpha.16",
+    "rawSpec": "3.0.0-alpha.18",
     "saveSpec": null,
-    "fetchSpec": "3.0.0-alpha.16"
+    "fetchSpec": "3.0.0-alpha.18"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/strapi-plugin-content-manager/-/strapi-plugin-content-manager-3.0.0-alpha.16.tgz",
-  "_shasum": "5b41cea55cf4df7bfcad8e388dae95720dd42d16",
-  "_spec": "strapi-plugin-content-manager@3.0.0-alpha.16",
-  "_where": "/Users/shane/dev/strapi-skeleton/strapi15-16",
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-content-manager/-/strapi-plugin-content-manager-3.0.0-alpha.18.tgz",
+  "_shasum": "abe89dbb4e37bab759e27946988a1ed5b019d533",
+  "_spec": "strapi-plugin-content-manager@3.0.0-alpha.18",
+  "_where": "/Users/shane/dev/strapi-migrate-alpha-17-18",
   "author": {
     "name": "Strapi team",
     "email": "hi@strapi.io",
@@ -41,7 +41,7 @@
     "draft-js": "^0.10.5",
     "react-select": "^1.2.1",
     "showdown": "^1.8.6",
-    "strapi-helper-plugin": "3.0.0-alpha.16"
+    "strapi-helper-plugin": "3.0.0-alpha.18"
   },
   "engines": {
     "node": ">= 10.0.0",
@@ -80,5 +80,5 @@
     "icon": "plug",
     "description": "content-manager.plugin.description"
   },
-  "version": "3.0.0-alpha.16"
+  "version": "3.0.0-alpha.18"
 }
