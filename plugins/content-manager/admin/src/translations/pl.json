@@ -45,7 +45,7 @@
   "containers.ListPage.displayedFields": "Wyświetlone atrybuty",
   "containers.SettingPage.attributes.description": "Zdefiniuj kolejność atrybutów",
   "containers.SettingPage.listSettings.title": "Lista - Ustawienia",
-  "containers.SettingsPage.Block.generalSettings.title": "Ogólne",
+  "containers.SettingsPage.Block.generalSettings.title":	"Ogólne",
   "containers.SettingPage.addField": "Dodaj nowy atrybut",
   "containers.SettingPage.editSettings.description": "Przeciągnij i upuś pola by zbudować układ",
   "containers.SettingPage.editSettings.title": "Edycja - Ustawienia",
