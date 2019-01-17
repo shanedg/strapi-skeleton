@@ -3,6 +3,7 @@
     "id": "content-manager",
     "source": {
       "development": "/content-manager/main.js",
+      "localdocker": "/content-manager/main.js",
       "production": "/content-manager/main.js",
       "staging": "/content-manager/main.js"
     }
@@ -11,6 +12,7 @@
     "id": "content-type-builder",
     "source": {
       "development": "/content-type-builder/main.js",
+      "localdocker": "/content-type-builder/main.js",
       "production": "/content-type-builder/main.js",
       "staging": "/content-type-builder/main.js"
     }
@@ -19,6 +21,7 @@
     "id": "email",
     "source": {
       "development": "/email/main.js",
+      "localdocker": "/email/main.js",
       "production": "/email/main.js",
       "staging": "/email/main.js"
     }
@@ -27,6 +30,7 @@
     "id": "settings-manager",
     "source": {
       "development": "/settings-manager/main.js",
+      "localdocker": "/settings-manager/main.js",
       "production": "/settings-manager/main.js",
       "staging": "/settings-manager/main.js"
     }
@@ -35,6 +39,7 @@
     "id": "upload",
     "source": {
       "development": "/upload/main.js",
+      "localdocker": "/upload/main.js",
       "production": "/upload/main.js",
       "staging": "/upload/main.js"
     }
@@ -43,6 +48,7 @@
     "id": "users-permissions",
     "source": {
       "development": "/users-permissions/main.js",
+      "localdocker": "/users-permissions/main.js",
       "production": "/users-permissions/main.js",
       "staging": "/users-permissions/main.js"
     }
