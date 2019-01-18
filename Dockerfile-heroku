@@ -1,5 +1,9 @@
 FROM node:alpine
 
+# https://bitbucket.org/site/master/issues/16334/pipelines-failing-with-could-not-get-uid
+# https://github.com/npm/npm/issues/20861
+RUN npm config set unsafe-perm true
+
 # Install pm2
 RUN npm install pm2 -g
 
