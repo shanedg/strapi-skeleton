@@ -1,40 +1,40 @@
 {
-  "_from": "strapi-plugin-upload@3.0.0-alpha.19",
-  "_id": "strapi-plugin-upload@3.0.0-alpha.19",
+  "_from": "strapi-plugin-upload@3.0.0-alpha.20",
+  "_id": "strapi-plugin-upload@3.0.0-alpha.20",
   "_inBundle": false,
-  "_integrity": "sha512-OXanS/UH6vMEuz36/WvFgNoiWVIzm1U84VHlzR6QfDsZFdAWbANrmCmusx56QrmadFmaTHjpeen/CCmmaKWF5w==",
+  "_integrity": "sha512-1BJhh6QsTIdJZZx7cLim9TvfoKoLFZd0kc8felrMqGsksN7LUPPjjdSBlxHz8gJkwANy/em6Raj1eu1C03NJAw==",
   "_location": "/strapi-plugin-upload",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "strapi-plugin-upload@3.0.0-alpha.19",
+    "raw": "strapi-plugin-upload@3.0.0-alpha.20",
     "name": "strapi-plugin-upload",
     "escapedName": "strapi-plugin-upload",
-    "rawSpec": "3.0.0-alpha.19",
+    "rawSpec": "3.0.0-alpha.20",
     "saveSpec": null,
-    "fetchSpec": "3.0.0-alpha.19"
+    "fetchSpec": "3.0.0-alpha.20"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/strapi-plugin-upload/-/strapi-plugin-upload-3.0.0-alpha.19.tgz",
-  "_shasum": "e928029d8eb653faccf4555201173f15c7927a9a",
-  "_spec": "strapi-plugin-upload@3.0.0-alpha.19",
-  "_where": "/Users/shane/dev/alpha-18-to-19",
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-upload/-/strapi-plugin-upload-3.0.0-alpha.20.tgz",
+  "_shasum": "5b8f47a264982af260ea1a1e2351d5576ba02191",
+  "_spec": "strapi-plugin-upload@3.0.0-alpha.20",
+  "_where": "/Users/shane/alpha-19-to-20",
   "author": {
     "name": "A Strapi developer"
   },
   "bundleDependencies": false,
   "dependencies": {
-    "strapi-provider-upload-local": "3.0.0-alpha.19",
+    "strapi-provider-upload-local": "3.0.0-alpha.20",
     "stream-to-array": "^2.3.0",
     "uuid": "^3.2.1"
   },
   "deprecated": false,
   "description": "This is the description of the plugin.",
   "devDependencies": {
-    "strapi-helper-plugin": "3.0.0-alpha.19"
+    "strapi-helper-plugin": "3.0.0-alpha.20"
   },
   "engines": {
     "node": ">= 10.0.0",
@@ -66,5 +66,5 @@
     "icon": "cloud-upload",
     "description": "Description of upload plugin."
   },
-  "version": "3.0.0-alpha.19"
+  "version": "3.0.0-alpha.20"
 }
