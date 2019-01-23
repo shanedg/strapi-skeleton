@@ -1,26 +1,26 @@
 {
-  "_from": "strapi-admin@3.0.0-alpha.19",
-  "_id": "strapi-admin@3.0.0-alpha.19",
+  "_from": "strapi-admin@3.0.0-alpha.20",
+  "_id": "strapi-admin@3.0.0-alpha.20",
   "_inBundle": false,
-  "_integrity": "sha512-Xd/9zp9+rzwg3tQpnVarzIdXTRQQc5RZE+JKIxW/DG4DtKsD96IyDDM2LuB0/M5s2/J7/59tfT9qO/uTRF9qfg==",
+  "_integrity": "sha512-/BbsgskSr54Z4sq4oO20uFfCzVyLhd5u+60DhMS82b+C7nCw1DxsXTSJMwqaXvlKOMUNTzS+9BAddmUBfeHxpQ==",
   "_location": "/strapi/strapi-admin",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "strapi-admin@3.0.0-alpha.19",
+    "raw": "strapi-admin@3.0.0-alpha.20",
     "name": "strapi-admin",
     "escapedName": "strapi-admin",
-    "rawSpec": "3.0.0-alpha.19",
+    "rawSpec": "3.0.0-alpha.20",
     "saveSpec": null,
-    "fetchSpec": "3.0.0-alpha.19"
+    "fetchSpec": "3.0.0-alpha.20"
   },
   "_requiredBy": [
     "/strapi/strapi-generate-admin"
   ],
-  "_resolved": "https://registry.npmjs.org/strapi-admin/-/strapi-admin-3.0.0-alpha.19.tgz",
-  "_shasum": "e5eaf126382e72e79730fd648c7bab3ccd7a125b",
-  "_spec": "strapi-admin@3.0.0-alpha.19",
+  "_resolved": "https://registry.npmjs.org/strapi-admin/-/strapi-admin-3.0.0-alpha.20.tgz",
+  "_shasum": "9df07c1cd19e812ccc4a15b255d110a17e03de77",
+  "_spec": "strapi-admin@3.0.0-alpha.20",
   "_where": "/Users/shane/.nvm/versions/node/v10.13.0/lib/node_modules/strapi/node_modules/strapi-generate-admin",
   "author": {
     "name": "Strapi"
@@ -38,8 +38,8 @@
   "description": "Strapi Admin",
   "devDependencies": {
     "sanitize.css": "^4.1.0",
-    "strapi-helper-plugin": "3.0.0-alpha.19",
-    "strapi-utils": "3.0.0-alpha.19"
+    "strapi-helper-plugin": "3.0.0-alpha.20",
+    "strapi-utils": "3.0.0-alpha.20"
   },
   "engines": {
     "node": ">= 10.0.0",
@@ -75,5 +75,5 @@
     "start": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=development PORT=4000 IS_ADMIN=true node ./node_modules/strapi-helper-plugin/lib/server",
     "test": "echo \"Error: no test specified\""
   },
-  "version": "3.0.0-alpha.19"
+  "version": "3.0.0-alpha.20"
 }
