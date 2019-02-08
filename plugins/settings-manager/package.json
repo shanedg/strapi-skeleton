@@ -1,27 +1,27 @@
 {
-  "_from": "strapi-plugin-settings-manager@3.0.0-alpha.22",
-  "_id": "strapi-plugin-settings-manager@3.0.0-alpha.22",
+  "_from": "strapi-plugin-settings-manager@3.0.0-alpha.23",
+  "_id": "strapi-plugin-settings-manager@3.0.0-alpha.23",
   "_inBundle": false,
-  "_integrity": "sha512-BcskSbbDN8Nn9JoO9Pj7o8OvBkz74KKa8jZG8WL6wtuCzA4Jk7VSBH61p6ImvrigFNml3aIadhTYErXPtAmWVw==",
+  "_integrity": "sha512-YOLwgphid8bBMhvCdztyZtItuJORa4HOaD6iTgrJfKU6+5CInlwLm3ItVrxnxEGqrWqx9yilw7Vxzj4V5iRHiw==",
   "_location": "/strapi-plugin-settings-manager",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "strapi-plugin-settings-manager@3.0.0-alpha.22",
+    "raw": "strapi-plugin-settings-manager@3.0.0-alpha.23",
     "name": "strapi-plugin-settings-manager",
     "escapedName": "strapi-plugin-settings-manager",
-    "rawSpec": "3.0.0-alpha.22",
+    "rawSpec": "3.0.0-alpha.23",
     "saveSpec": null,
-    "fetchSpec": "3.0.0-alpha.22"
+    "fetchSpec": "3.0.0-alpha.23"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/strapi-plugin-settings-manager/-/strapi-plugin-settings-manager-3.0.0-alpha.22.tgz",
-  "_shasum": "6fbb29a7366b268e559959d85d5786f8090f4e82",
-  "_spec": "strapi-plugin-settings-manager@3.0.0-alpha.22",
-  "_where": "/Users/shane/dev/alpha-21-to-22",
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-settings-manager/-/strapi-plugin-settings-manager-3.0.0-alpha.23.tgz",
+  "_shasum": "20716a8d5883446c52caf8c1cfbb094ebc445f89",
+  "_spec": "strapi-plugin-settings-manager@3.0.0-alpha.23",
+  "_where": "/Users/shane/dev/alpha-22-to-23",
   "author": {
     "name": "Strapi team",
     "email": "hi@strapi.io",
@@ -36,7 +36,7 @@
   "devDependencies": {
     "flag-icon-css": "^2.8.0",
     "react-select": "^1.0.0-rc.5",
-    "strapi-helper-plugin": "3.0.0-alpha.22"
+    "strapi-helper-plugin": "3.0.0-alpha.23"
   },
   "engines": {
     "node": ">= 10.0.0",
@@ -62,7 +62,7 @@
     "build": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=production node node_modules/strapi-helper-plugin/node_modules/.bin/webpack --config node_modules/strapi-helper-plugin/lib/internals/webpack/webpack.prod.babel.js --color -p --progress",
     "build:clean": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/rimraf admin/build",
     "build:dev": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=development node ./node_modules/strapi-helper-plugin/node_modules/.bin/webpack --config node_modules/strapi-helper-plugin/lib/internals/webpack/webpack.prod.babel.js --color -p --progress",
-    "generate": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/plop --plopfile ./node_modules/strapi-helper-plugin/lib/internals/generators/index.js",
+    "generate": "node ./node_modules/strapi-helper-plugin/node_modules/plop --plopfile ./node_modules/strapi-helper-plugin/lib/internals/generators/index.js",
     "lint": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/eslint --ignore-path .gitignore --ignore-pattern '/admin/build/' --config ./node_modules/strapi-helper-plugin/lib/internals/eslint/.eslintrc.json admin",
     "preanalyze": "npm run analyze:clean",
     "prebuild": "npm run build:clean",
@@ -76,5 +76,5 @@
     "icon": "wrench",
     "description": "settings-manager.plugin.description"
   },
-  "version": "3.0.0-alpha.22"
+  "version": "3.0.0-alpha.23"
 }
