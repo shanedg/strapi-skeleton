@@ -1,8 +1,8 @@
 {
-  "_from": "strapi-admin@3.0.0-alpha.22",
-  "_id": "strapi-admin@3.0.0-alpha.22",
+  "_from": "strapi-admin@3.0.0-alpha.23",
+  "_id": "strapi-admin@3.0.0-alpha.23",
   "_inBundle": false,
-  "_integrity": "sha512-U7MTFfE5vUUi23sYi4FCAw4BR1QAKY5F+6C29vYl3ww31YhdUbwVLx5fWfFPXz3rdGW9KIyK+Ybj4ECyzftv2A==",
+  "_integrity": "sha512-HUYtPMESbWrxMXVVYRd1vWOvyQoZyNaHUBwpGv1Ra/zPQbaZYxGP9Qys8AkUq1vfRNkgaVWet0n7OzWqposhcQ==",
   "_location": "/strapi/strapi-admin",
   "_phantomChildren": {
     "glob": "7.1.3",
@@ -12,19 +12,19 @@
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "strapi-admin@3.0.0-alpha.22",
+    "raw": "strapi-admin@3.0.0-alpha.23",
     "name": "strapi-admin",
     "escapedName": "strapi-admin",
-    "rawSpec": "3.0.0-alpha.22",
+    "rawSpec": "3.0.0-alpha.23",
     "saveSpec": null,
-    "fetchSpec": "3.0.0-alpha.22"
+    "fetchSpec": "3.0.0-alpha.23"
   },
   "_requiredBy": [
     "/strapi/strapi-generate-admin"
   ],
-  "_resolved": "https://registry.npmjs.org/strapi-admin/-/strapi-admin-3.0.0-alpha.22.tgz",
-  "_shasum": "5d6608f3c0a4ac7efc2366c4ff98cd94179c5b15",
-  "_spec": "strapi-admin@3.0.0-alpha.22",
+  "_resolved": "https://registry.npmjs.org/strapi-admin/-/strapi-admin-3.0.0-alpha.23.tgz",
+  "_shasum": "e1190d5b858ac3d9c6bed61a878dc1fa3692d308",
+  "_spec": "strapi-admin@3.0.0-alpha.23",
   "_where": "/Users/shane/.nvm/versions/node/v10.15.0/lib/node_modules/strapi/node_modules/strapi-generate-admin",
   "author": {
     "name": "Strapi"
@@ -42,8 +42,8 @@
   "description": "Strapi Admin",
   "devDependencies": {
     "sanitize.css": "^4.1.0",
-    "strapi-helper-plugin": "3.0.0-alpha.22",
-    "strapi-utils": "3.0.0-alpha.22"
+    "strapi-helper-plugin": "3.0.0-alpha.23",
+    "strapi-utils": "3.0.0-alpha.23"
   },
   "engines": {
     "node": ">= 10.0.0",
@@ -79,5 +79,5 @@
     "start": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=development PORT=4000 IS_ADMIN=true node ./node_modules/strapi-helper-plugin/lib/server",
     "test": "echo \"Error: no test specified\""
   },
-  "version": "3.0.0-alpha.22"
+  "version": "3.0.0-alpha.23"
 }
