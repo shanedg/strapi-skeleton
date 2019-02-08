@@ -1,27 +1,27 @@
 {
-  "_from": "strapi-plugin-users-permissions@3.0.0-alpha.20",
-  "_id": "strapi-plugin-users-permissions@3.0.0-alpha.20",
+  "_from": "strapi-plugin-users-permissions@3.0.0-alpha.21",
+  "_id": "strapi-plugin-users-permissions@3.0.0-alpha.21",
   "_inBundle": false,
-  "_integrity": "sha512-bmHlUt5ub8nKx8bZ6YWx6npA1u+IWGFdKJAFxBg24+CZQBPNu6SrOochO9by45qO61bEojOaRoqs3DfsanHlZQ==",
+  "_integrity": "sha512-Txr4iKA6l9n+ofPyBHhElJD2NW+HeRQF4I/w/gv9g5gaO2F68K73qYRfEmJA0VJu86gbsr5p9ZmxXy36S/tJ4w==",
   "_location": "/strapi-plugin-users-permissions",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "strapi-plugin-users-permissions@3.0.0-alpha.20",
+    "raw": "strapi-plugin-users-permissions@3.0.0-alpha.21",
     "name": "strapi-plugin-users-permissions",
     "escapedName": "strapi-plugin-users-permissions",
-    "rawSpec": "3.0.0-alpha.20",
+    "rawSpec": "3.0.0-alpha.21",
     "saveSpec": null,
-    "fetchSpec": "3.0.0-alpha.20"
+    "fetchSpec": "3.0.0-alpha.21"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/strapi-plugin-users-permissions/-/strapi-plugin-users-permissions-3.0.0-alpha.20.tgz",
-  "_shasum": "c22c2f0086ec97a88f75dd3a14c42b8f97cee42b",
-  "_spec": "strapi-plugin-users-permissions@3.0.0-alpha.20",
-  "_where": "/Users/shane/alpha-19-to-20",
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-users-permissions/-/strapi-plugin-users-permissions-3.0.0-alpha.21.tgz",
+  "_shasum": "3cbe981bab1ddab226cac8449320aa6855fbc843",
+  "_spec": "strapi-plugin-users-permissions@3.0.0-alpha.21",
+  "_where": "/Users/shane/dev/alpha-20-to-21",
   "author": {
     "name": "Strapi team",
     "email": "hi@strapi.io",
@@ -39,13 +39,13 @@
     "koa2-ratelimit": "^0.6.1",
     "purest": "^2.0.1",
     "request": "^2.83.0",
-    "strapi-utils": "3.0.0-alpha.20",
+    "strapi-utils": "3.0.0-alpha.21",
     "uuid": "^3.1.0"
   },
   "deprecated": false,
   "description": "Protect your API with a full-authentication process based on JWT",
   "devDependencies": {
-    "strapi-helper-plugin": "3.0.0-alpha.20"
+    "strapi-helper-plugin": "3.0.0-alpha.21"
   },
   "engines": {
     "node": ">= 10.0.0",
@@ -84,5 +84,5 @@
     "icon": "users",
     "description": "users-permissions.plugin.description"
   },
-  "version": "3.0.0-alpha.20"
+  "version": "3.0.0-alpha.21"
 }

@@ -1,27 +1,27 @@
 {
-  "_from": "strapi-admin@3.0.0-alpha.20",
-  "_id": "strapi-admin@3.0.0-alpha.20",
+  "_from": "strapi-admin@3.0.0-alpha.21",
+  "_id": "strapi-admin@3.0.0-alpha.21",
   "_inBundle": false,
-  "_integrity": "sha512-/BbsgskSr54Z4sq4oO20uFfCzVyLhd5u+60DhMS82b+C7nCw1DxsXTSJMwqaXvlKOMUNTzS+9BAddmUBfeHxpQ==",
+  "_integrity": "sha512-nqp+eakYdNCzi2pkwjRgMjahzGq67A6V3Te8CyGrKKBxFDTKk9/g8CsYtxyf+ocsvyH7ZU28TSmf2wppij/7NA==",
   "_location": "/strapi/strapi-admin",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "strapi-admin@3.0.0-alpha.20",
+    "raw": "strapi-admin@3.0.0-alpha.21",
     "name": "strapi-admin",
     "escapedName": "strapi-admin",
-    "rawSpec": "3.0.0-alpha.20",
+    "rawSpec": "3.0.0-alpha.21",
     "saveSpec": null,
-    "fetchSpec": "3.0.0-alpha.20"
+    "fetchSpec": "3.0.0-alpha.21"
   },
   "_requiredBy": [
     "/strapi/strapi-generate-admin"
   ],
-  "_resolved": "https://registry.npmjs.org/strapi-admin/-/strapi-admin-3.0.0-alpha.20.tgz",
-  "_shasum": "9df07c1cd19e812ccc4a15b255d110a17e03de77",
-  "_spec": "strapi-admin@3.0.0-alpha.20",
-  "_where": "/Users/shane/.nvm/versions/node/v10.13.0/lib/node_modules/strapi/node_modules/strapi-generate-admin",
+  "_resolved": "https://registry.npmjs.org/strapi-admin/-/strapi-admin-3.0.0-alpha.21.tgz",
+  "_shasum": "e1882541a7c99193307793e59ade378a8d525adc",
+  "_spec": "strapi-admin@3.0.0-alpha.21",
+  "_where": "/Users/shane/.nvm/versions/node/v10.15.0/lib/node_modules/strapi/node_modules/strapi-generate-admin",
   "author": {
     "name": "Strapi"
   },
@@ -38,8 +38,8 @@
   "description": "Strapi Admin",
   "devDependencies": {
     "sanitize.css": "^4.1.0",
-    "strapi-helper-plugin": "3.0.0-alpha.20",
-    "strapi-utils": "3.0.0-alpha.20"
+    "strapi-helper-plugin": "3.0.0-alpha.21",
+    "strapi-utils": "3.0.0-alpha.21"
   },
   "engines": {
     "node": ">= 10.0.0",
@@ -75,5 +75,5 @@
     "start": "node ./node_modules/strapi-helper-plugin/node_modules/.bin/cross-env NODE_ENV=development PORT=4000 IS_ADMIN=true node ./node_modules/strapi-helper-plugin/lib/server",
     "test": "echo \"Error: no test specified\""
   },
-  "version": "3.0.0-alpha.20"
+  "version": "3.0.0-alpha.21"
 }

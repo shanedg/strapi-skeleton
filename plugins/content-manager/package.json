@@ -1,27 +1,27 @@
 {
-  "_from": "strapi-plugin-content-manager@3.0.0-alpha.20",
-  "_id": "strapi-plugin-content-manager@3.0.0-alpha.20",
+  "_from": "strapi-plugin-content-manager@3.0.0-alpha.21",
+  "_id": "strapi-plugin-content-manager@3.0.0-alpha.21",
   "_inBundle": false,
-  "_integrity": "sha512-yhYbE7PJGbMTrNqX+ZSP8F2GHYaSrxVD0J0bitI0BYtksc5BPixsdDLvv0tGi03l1u7yei8Lx0TuFu0toHlu8w==",
+  "_integrity": "sha512-HZDd/gQgPlmUQUJnw+6o1EqNodfmOI0o5tKopxd94UBhUXS+hGWKYxPfHho39L24Gh23u1wy+e1/fdn2jsV6kw==",
   "_location": "/strapi-plugin-content-manager",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "strapi-plugin-content-manager@3.0.0-alpha.20",
+    "raw": "strapi-plugin-content-manager@3.0.0-alpha.21",
     "name": "strapi-plugin-content-manager",
     "escapedName": "strapi-plugin-content-manager",
-    "rawSpec": "3.0.0-alpha.20",
+    "rawSpec": "3.0.0-alpha.21",
     "saveSpec": null,
-    "fetchSpec": "3.0.0-alpha.20"
+    "fetchSpec": "3.0.0-alpha.21"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/strapi-plugin-content-manager/-/strapi-plugin-content-manager-3.0.0-alpha.20.tgz",
-  "_shasum": "d1304bf64b74a48f2735d4f298af720eb408b02e",
-  "_spec": "strapi-plugin-content-manager@3.0.0-alpha.20",
-  "_where": "/Users/shane/alpha-19-to-20",
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-content-manager/-/strapi-plugin-content-manager-3.0.0-alpha.21.tgz",
+  "_shasum": "f2f8cd9dc691cbb6e60c3b6a5696e48a056d83a0",
+  "_spec": "strapi-plugin-content-manager@3.0.0-alpha.21",
+  "_where": "/Users/shane/dev/alpha-20-to-21",
   "author": {
     "name": "Strapi team",
     "email": "hi@strapi.io",
@@ -41,7 +41,7 @@
     "draft-js": "^0.10.5",
     "react-select": "^1.2.1",
     "showdown": "^1.8.6",
-    "strapi-helper-plugin": "3.0.0-alpha.20"
+    "strapi-helper-plugin": "3.0.0-alpha.21"
   },
   "engines": {
     "node": ">= 10.0.0",
@@ -80,5 +80,5 @@
     "icon": "plug",
     "description": "content-manager.plugin.description"
   },
-  "version": "3.0.0-alpha.20"
+  "version": "3.0.0-alpha.21"
 }

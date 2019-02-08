@@ -22,7 +22,7 @@
     "knex": "latest",
     "lodash": "^4.17.5",
     "pg": "7.6.1",
-    "strapi": "^3.0.0-alpha.20",
+    "strapi": "^3.0.0-alpha.21",
     "strapi-hook-bookshelf": "^3.0.0-alpha.18",
     "strapi-hook-knex": "^3.0.0-alpha.18"
   },
