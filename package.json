@@ -23,8 +23,8 @@
     "lodash": "^4.17.5",
     "pg": "7.6.1",
     "strapi": "^3.0.0-alpha.23",
-    "strapi-hook-bookshelf": "^3.0.0-alpha.18",
-    "strapi-hook-knex": "^3.0.0-alpha.18"
+    "strapi-hook-bookshelf": "^3.0.0-alpha.23",
+    "strapi-hook-knex": "^3.0.0-alpha.23"
   },
   "author": {
     "name": "shane",
