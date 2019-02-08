@@ -1,27 +1,27 @@
 {
-  "_from": "strapi-plugin-settings-manager@3.0.0-alpha.21",
-  "_id": "strapi-plugin-settings-manager@3.0.0-alpha.21",
+  "_from": "strapi-plugin-settings-manager@3.0.0-alpha.22",
+  "_id": "strapi-plugin-settings-manager@3.0.0-alpha.22",
   "_inBundle": false,
-  "_integrity": "sha512-pA6AJw3sia+8KljGxTPD0KDobhVR7NJoM7GQDVW+q+GC5qu9FfJxVolq0cImXP3wiD6eN55PvfyVrEEir9fxig==",
+  "_integrity": "sha512-BcskSbbDN8Nn9JoO9Pj7o8OvBkz74KKa8jZG8WL6wtuCzA4Jk7VSBH61p6ImvrigFNml3aIadhTYErXPtAmWVw==",
   "_location": "/strapi-plugin-settings-manager",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "strapi-plugin-settings-manager@3.0.0-alpha.21",
+    "raw": "strapi-plugin-settings-manager@3.0.0-alpha.22",
     "name": "strapi-plugin-settings-manager",
     "escapedName": "strapi-plugin-settings-manager",
-    "rawSpec": "3.0.0-alpha.21",
+    "rawSpec": "3.0.0-alpha.22",
     "saveSpec": null,
-    "fetchSpec": "3.0.0-alpha.21"
+    "fetchSpec": "3.0.0-alpha.22"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/strapi-plugin-settings-manager/-/strapi-plugin-settings-manager-3.0.0-alpha.21.tgz",
-  "_shasum": "d5b66ba7e4aadd63f09468655416e836f54d5062",
-  "_spec": "strapi-plugin-settings-manager@3.0.0-alpha.21",
-  "_where": "/Users/shane/dev/alpha-20-to-21",
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-settings-manager/-/strapi-plugin-settings-manager-3.0.0-alpha.22.tgz",
+  "_shasum": "6fbb29a7366b268e559959d85d5786f8090f4e82",
+  "_spec": "strapi-plugin-settings-manager@3.0.0-alpha.22",
+  "_where": "/Users/shane/dev/alpha-21-to-22",
   "author": {
     "name": "Strapi team",
     "email": "hi@strapi.io",
@@ -36,7 +36,7 @@
   "devDependencies": {
     "flag-icon-css": "^2.8.0",
     "react-select": "^1.0.0-rc.5",
-    "strapi-helper-plugin": "3.0.0-alpha.21"
+    "strapi-helper-plugin": "3.0.0-alpha.22"
   },
   "engines": {
     "node": ">= 10.0.0",
@@ -76,5 +76,5 @@
     "icon": "wrench",
     "description": "settings-manager.plugin.description"
   },
-  "version": "3.0.0-alpha.21"
+  "version": "3.0.0-alpha.22"
 }
