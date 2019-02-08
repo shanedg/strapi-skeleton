@@ -1,27 +1,27 @@
 {
-  "_from": "strapi-plugin-email@3.0.0-alpha.21",
-  "_id": "strapi-plugin-email@3.0.0-alpha.21",
+  "_from": "strapi-plugin-email@3.0.0-alpha.22",
+  "_id": "strapi-plugin-email@3.0.0-alpha.22",
   "_inBundle": false,
-  "_integrity": "sha512-FknPmSUlVFhI+r88/ytkoqpXHaI046NX3vF+Pt8uTveJ24Iprpw9FMflWy1sHGoqgILVIEhGK+NsTW4XraOBPg==",
+  "_integrity": "sha512-0jwqBOJ0qNLVL+ztxUWkvmEWOIBDRYZOijlyCvk2RzLj2oPuEx7U7ueiDvZQh1W44I0M08EOr15SFRJC/wXAYA==",
   "_location": "/strapi-plugin-email",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "strapi-plugin-email@3.0.0-alpha.21",
+    "raw": "strapi-plugin-email@3.0.0-alpha.22",
     "name": "strapi-plugin-email",
     "escapedName": "strapi-plugin-email",
-    "rawSpec": "3.0.0-alpha.21",
+    "rawSpec": "3.0.0-alpha.22",
     "saveSpec": null,
-    "fetchSpec": "3.0.0-alpha.21"
+    "fetchSpec": "3.0.0-alpha.22"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/strapi-plugin-email/-/strapi-plugin-email-3.0.0-alpha.21.tgz",
-  "_shasum": "ee966dd7c293fddff4a2145f76dd15985603b034",
-  "_spec": "strapi-plugin-email@3.0.0-alpha.21",
-  "_where": "/Users/shane/dev/alpha-20-to-21",
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-email/-/strapi-plugin-email-3.0.0-alpha.22.tgz",
+  "_shasum": "71ca6f2513472d5c1786c8b5685ca3a43547a8a1",
+  "_spec": "strapi-plugin-email@3.0.0-alpha.22",
+  "_where": "/Users/shane/dev/alpha-21-to-22",
   "author": {
     "name": "Strapi team",
     "email": "hi@strapi.io",
@@ -32,13 +32,13 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "strapi-provider-email-sendmail": "3.0.0-alpha.21"
+    "strapi-provider-email-sendmail": "3.0.0-alpha.22"
   },
   "deprecated": false,
   "description": "This is the description of the plugin.",
   "devDependencies": {
     "react-copy-to-clipboard": "5.0.1",
-    "strapi-helper-plugin": "3.0.0-alpha.21"
+    "strapi-helper-plugin": "3.0.0-alpha.22"
   },
   "engines": {
     "node": ">= 10.0.0",
@@ -77,5 +77,5 @@
     "icon": "paper-plane",
     "description": "email.plugin.description"
   },
-  "version": "3.0.0-alpha.21"
+  "version": "3.0.0-alpha.22"
 }

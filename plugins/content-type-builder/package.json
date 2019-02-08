@@ -1,27 +1,27 @@
 {
-  "_from": "strapi-plugin-content-type-builder@3.0.0-alpha.21",
-  "_id": "strapi-plugin-content-type-builder@3.0.0-alpha.21",
+  "_from": "strapi-plugin-content-type-builder@3.0.0-alpha.22",
+  "_id": "strapi-plugin-content-type-builder@3.0.0-alpha.22",
   "_inBundle": false,
-  "_integrity": "sha512-kMpbPF/yGeGFCgGKSNSW89o3+sxHP5GjKDltfWx44d0Lk09okcUkdojfJrKSQT+8uMpdNSaBGyzxAKxPaLBzKw==",
+  "_integrity": "sha512-bLhH5wgfMNOc4iURK+rR+Y0aSPrE7LrM2n/vwIg8vu4iTVoD+VJ1YO9L1e0/ExrxC49h1LMA4lWMhT9+yJyodg==",
   "_location": "/strapi-plugin-content-type-builder",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "strapi-plugin-content-type-builder@3.0.0-alpha.21",
+    "raw": "strapi-plugin-content-type-builder@3.0.0-alpha.22",
     "name": "strapi-plugin-content-type-builder",
     "escapedName": "strapi-plugin-content-type-builder",
-    "rawSpec": "3.0.0-alpha.21",
+    "rawSpec": "3.0.0-alpha.22",
     "saveSpec": null,
-    "fetchSpec": "3.0.0-alpha.21"
+    "fetchSpec": "3.0.0-alpha.22"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/strapi-plugin-content-type-builder/-/strapi-plugin-content-type-builder-3.0.0-alpha.21.tgz",
-  "_shasum": "5351adc7b31979719cd0b33971195a4616cdb16a",
-  "_spec": "strapi-plugin-content-type-builder@3.0.0-alpha.21",
-  "_where": "/Users/shane/dev/alpha-20-to-21",
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-content-type-builder/-/strapi-plugin-content-type-builder-3.0.0-alpha.22.tgz",
+  "_shasum": "38ea09084755b73e7002bea85626e12887fad981",
+  "_spec": "strapi-plugin-content-type-builder@3.0.0-alpha.22",
+  "_where": "/Users/shane/dev/alpha-21-to-22",
   "author": {
     "name": "Strapi team",
     "email": "hi@strapi.io",
@@ -34,13 +34,13 @@
   "dependencies": {
     "immutable": "^3.8.2",
     "pluralize": "^7.0.0",
-    "strapi-generate": "3.0.0-alpha.21",
-    "strapi-generate-api": "3.0.0-alpha.21"
+    "strapi-generate": "3.0.0-alpha.22",
+    "strapi-generate-api": "3.0.0-alpha.22"
   },
   "deprecated": false,
   "description": "Strapi plugin to create content type (API).",
   "devDependencies": {
-    "strapi-helper-plugin": "3.0.0-alpha.21"
+    "strapi-helper-plugin": "3.0.0-alpha.22"
   },
   "engines": {
     "node": ">= 10.0.0",
@@ -79,5 +79,5 @@
     "icon": "paint-brush",
     "description": "content-type-builder.plugin.description"
   },
-  "version": "3.0.0-alpha.21"
+  "version": "3.0.0-alpha.22"
 }
