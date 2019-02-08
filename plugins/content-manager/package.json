@@ -1,27 +1,27 @@
 {
-  "_from": "strapi-plugin-content-manager@3.0.0-alpha.21",
-  "_id": "strapi-plugin-content-manager@3.0.0-alpha.21",
+  "_from": "strapi-plugin-content-manager@3.0.0-alpha.22",
+  "_id": "strapi-plugin-content-manager@3.0.0-alpha.22",
   "_inBundle": false,
-  "_integrity": "sha512-HZDd/gQgPlmUQUJnw+6o1EqNodfmOI0o5tKopxd94UBhUXS+hGWKYxPfHho39L24Gh23u1wy+e1/fdn2jsV6kw==",
+  "_integrity": "sha512-DB8JYkAJjSgn6UltaDeoQRW28C6t3de3V1mXPYH07kQAxcepNNwVly0pxqx7j9LE3VYUFM5BM1JxEtO8B6TvFw==",
   "_location": "/strapi-plugin-content-manager",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "strapi-plugin-content-manager@3.0.0-alpha.21",
+    "raw": "strapi-plugin-content-manager@3.0.0-alpha.22",
     "name": "strapi-plugin-content-manager",
     "escapedName": "strapi-plugin-content-manager",
-    "rawSpec": "3.0.0-alpha.21",
+    "rawSpec": "3.0.0-alpha.22",
     "saveSpec": null,
-    "fetchSpec": "3.0.0-alpha.21"
+    "fetchSpec": "3.0.0-alpha.22"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/strapi-plugin-content-manager/-/strapi-plugin-content-manager-3.0.0-alpha.21.tgz",
-  "_shasum": "f2f8cd9dc691cbb6e60c3b6a5696e48a056d83a0",
-  "_spec": "strapi-plugin-content-manager@3.0.0-alpha.21",
-  "_where": "/Users/shane/dev/alpha-20-to-21",
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-content-manager/-/strapi-plugin-content-manager-3.0.0-alpha.22.tgz",
+  "_shasum": "167c225b387db11e9b4c99a5426353d0ac45dee8",
+  "_spec": "strapi-plugin-content-manager@3.0.0-alpha.22",
+  "_where": "/Users/shane/dev/alpha-21-to-22",
   "author": {
     "name": "Strapi team",
     "email": "hi@strapi.io",
@@ -41,7 +41,7 @@
     "draft-js": "^0.10.5",
     "react-select": "^1.2.1",
     "showdown": "^1.8.6",
-    "strapi-helper-plugin": "3.0.0-alpha.21"
+    "strapi-helper-plugin": "3.0.0-alpha.22"
   },
   "engines": {
     "node": ">= 10.0.0",
@@ -80,5 +80,5 @@
     "icon": "plug",
     "description": "content-manager.plugin.description"
   },
-  "version": "3.0.0-alpha.21"
+  "version": "3.0.0-alpha.22"
 }
