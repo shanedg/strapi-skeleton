@@ -1,0 +1,5 @@
+CREATE DATABASE "strapi-db";
+CREATE USER "strapi-user" WITH ENCRYPTED PASSWORD 'strapi-user-alright';
+ALTER USER "strapi-user" WITH SUPERUSER;
+ALTER DATABASE "strapi-db" OWNER TO "strapi-user";
+GRANT ALL ON DATABASE "strapi-db" TO "strapi-user";
