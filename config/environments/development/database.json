@@ -5,27 +5,12 @@
       "connector": "strapi-hook-bookshelf",
       "settings": {
         "client": "postgres",
-        "host": "127.0.0.1",
+        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
         "srv": false,
-        "port": 5432,
-        "database": "local-db-ok",
-        "username": "local-user-ok",
-        "password": "local-user-alright"
-      },
-      "options": {
-        "ssl": false
-      }
-    },
-    "default__archive": {
-      "connector": "strapi-hook-bookshelf",
-      "settings": {
-        "client": "postgres",
-        "host": "127.0.0.1",
-        "srv": false,
-        "port": 5432,
-        "database": "local-strapi",
-        "username": "shane",
-        "password": ""
+        "port": "${process.env.DATABASE_PORT || 5432}",
+        "database": "${process.env.DATABASE_NAME || ''}",
+        "username": "${process.env.DATABASE_USERNAME || ''}",
+        "password": "${process.env.DATABASE_PASSWORD || ''}"
       },
       "options": {
         "ssl": false

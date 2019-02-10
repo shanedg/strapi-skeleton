@@ -24,13 +24,13 @@ brew services start postgresql
 run commands to ready postgres db
 
 ```bash
-psql -f bootsrap-db-local.psql
+psql postgres -f bootsrap-db.psql
 ```
 
 #### start strapi
 
 ```bash
-pm2 start ecosystem.config.js --only strapi-skeleton-dev
+pm2 start ecosystem.config.js
 ```
 
 #### view strapi app
@@ -55,7 +55,7 @@ pm2 kill
 #### create docker bridge network for strapi and db to communicate over
 
 ```bash
-docker network create --driver bridge use-custom-bridge-ok
+docker network create --driver bridge strapi-db-bridge
 ```
 
 #### postgres
@@ -64,51 +64,65 @@ docker network create --driver bridge use-custom-bridge-ok
 
 ```bash
 docker pull postgres
-docker run --name postgres-container-ok --net use-custom-bridge-ok -e POSTGRES_PASSWORD=postgres-ok -d postgres
+```
+
+```bash
+docker run --name postgres-ok \
+  --net strapi-db-bridge \
+  -e POSTGRES_PASSWORD=pg-user-alright \
+  -d postgres
 
 ```
 
 ##### psql to configure postgres db for strapi
 
 ```bash
-docker run -it --rm --net use-custom-bridge-ok postgres psql -h postgres-container-ok -U postgres
+docker run -it \
+  --rm \
+  --net strapi-db-bridge \
+  postgres psql -h postgres-ok -U postgres
 ```
 
 ```psql
-CREATE DATABASE "docker-db-ok";
-CREATE USER "docker-user-ok" WITH PASSWORD 'docker-password-alright';
-ALTER DATABASE "docker-db-ok" OWNER TO "docker-user-ok";
-ALTER USER "docker-user-ok" WITH SUPERUSER;
-GRANT ALL PRIVILEGES ON DATABASE "docker-db-ok" TO "docker-user-ok";
+CREATE DATABASE "strapi-db";
+CREATE USER "strapi-user" WITH ENCRYPTED PASSWORD 'strapi-user-alright';
+ALTER USER "strapi-user" WITH SUPERUSER;
+ALTER DATABASE "strapi-db" OWNER TO "strapi-user";
+GRANT ALL ON DATABASE "strapi-db" TO "strapi-user";
 ```
 
 *TODO:*
 
 ```bash
-psql -f bootstrap-db-docker.psql
+psql postgres -f bootstrap-db.psql
 ```
 
 #### build strapi image
 
 ```bash
-docker build -t strapi-image-ok .
+docker build -t strapi .
 ```
 
 #### run strapi container, connecting to custom bridge network and exposing port 1337 on container as port 1337 on localhost
 
 ```bash
-docker run -d -p 1337:1337 --net use-custom-bridge-ok --name strapi-container-ok strapi-image-ok
+docker run -d \
+  -p 1337:1337 \
+  --net strapi-db-bridge \
+  --name strapi-ok \
+  strapi
 ```
 
 #### view strapi application logs in container
 
 ```bash
-docker exec -it strapi-container-ok pm2 log
+docker exec -it strapi-ok pm2 log
 ```
 
 ```bash
-docker exec -it strapi-container-ok pm2 monit
-docker exec -it strapi-container-ok pm2 restart ecosystem.config.js --update-env --only strapi-skeleton-dev --env localdocker
+docker exec -it strapi-ok pm2 monit
+docker exec -it strapi-ok \
+  pm2 restart ecosystem.prod.config.js --update-env
 ```
 
 `--update-env` is optional and [reloads pm2 config](https://pm2.io/doc/en/runtime/guide/ecosystem-file/#updating-the-environment) in `ecosystem.config.js`
@@ -123,12 +137,12 @@ localhost:1337/admin
 #### teardown docker
 
 ```bash
-docker container stop strapi-container-ok
-docker container stop postgres-container-ok
+docker container stop strapi-ok
+docker container stop postgres-ok
 docker container prune
-docker network rm bridge use-custom-bridge-ok
+docker network rm bridge strapi-db-bridge
 docker network prune
-docker image rm strapi-image-ok
+docker image rm strapi
 docker image prune
 ```
 
