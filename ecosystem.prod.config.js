@@ -18,9 +18,6 @@ module.exports = {
         DATABASE_PASSWORD: 'strapi-user-alright',
         DATABASE_SSL: false,
       },
-      env_heroku: {
-        NODE_ENV: 'production',
-      },
       env_production: {
         NODE_ENV: 'production',
       },
