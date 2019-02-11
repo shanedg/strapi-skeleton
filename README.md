@@ -153,7 +153,7 @@ docker image prune
 #### build image
 
 ```bash
-docker build --file docker-staging/Dockerfile -t strapi-staging .
+docker build --file Dockerfile-staging -t strapi-staging .
 ```
 
 #### run container
