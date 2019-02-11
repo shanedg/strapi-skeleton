@@ -3,7 +3,7 @@
 ## build api-only image
 
 ```bash
-docker build --file docker-api/Dockerfile -t strapi:api-only .
+docker build --file docker-api/Dockerfile -t strapi-api .
 ```
 
 Note, build context aka the directory this command is run in must be the project root.
@@ -11,5 +11,5 @@ Note, build context aka the directory this command is run in must be the project
 ## run api-only container
 
 ```bash
-docker run -d -p 1337:1337 --net strapi-db-bridge --name strapi-api-ok strapi:api-only
+docker run -d -p 1337:1337 --net strapi-db-bridge --name strapi-api-ok strapi-api
 ```

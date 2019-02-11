@@ -31,4 +31,4 @@ EXPOSE 1337
 # [debugging] Show current folder structure in logs
 # RUN ls -al -R
 
-CMD [ "pm2-runtime", "start", "ecosystem.prod.config.js", "--env", "heroku" ]
+CMD [ "pm2-runtime", "start", "ecosystem.prod.config.js" ]
