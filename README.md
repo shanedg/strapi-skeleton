@@ -60,7 +60,24 @@ docker network create --driver bridge strapi-db-bridge
 
 #### postgres
 
-##### get/run [postgres image](https://hub.docker.com/_/postgres/)/container
+##### customize [postgres image](https://hub.docker.com/_/postgres/)
+
+specifically, our custom postgres image bootstraps strapi user/db/permissions on init
+
+```bash
+docker build --file docker-postgres/Dockerfile -t strapi-postgres .
+```
+
+```bash
+docker run --name postgres-ok \
+  --net strapi-db-bridge \
+  -e POSTGRES_PASSWORD=pg-user-alright \
+  -d strapi-postgres
+```
+
+##### optional: run canonical postgres container
+
+###### get image and run
 
 ```bash
 docker pull postgres
@@ -71,10 +88,9 @@ docker run --name postgres-ok \
   --net strapi-db-bridge \
   -e POSTGRES_PASSWORD=pg-user-alright \
   -d postgres
-
 ```
 
-##### psql to configure postgres db for strapi
+###### psql to configure postgres db for strapi
 
 ```bash
 docker run -it \
@@ -89,12 +105,6 @@ CREATE USER "strapi-user" WITH ENCRYPTED PASSWORD 'strapi-user-alright';
 ALTER USER "strapi-user" WITH SUPERUSER;
 ALTER DATABASE "strapi-db" OWNER TO "strapi-user";
 GRANT ALL ON DATABASE "strapi-db" TO "strapi-user";
-```
-
-*TODO:*
-
-```bash
-psql postgres -f bootstrap-db.psql
 ```
 
 #### build strapi image
@@ -163,6 +173,8 @@ docker run -d -p 1337:1337 --name strapi-staging-ok strapi-staging
 ```
 
 ### production
+
+`Dockerfile` and `Dockerfile-staging` images are more or less production-ready.
 
 TODO:
 
