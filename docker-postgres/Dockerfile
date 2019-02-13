@@ -1,13 +1,10 @@
-FROM postgres:alpine
+FROM postgres:latest
 
-# add sql bootstrap scripts in dir:
-# /docker-entrypoint-initdb.d/
 WORKDIR /docker-entrypoint-initdb.d
 
-# should get run on db init
-COPY bootstrap-db-docker.psql .
+# run on db init
+COPY bootstrap-db.psql ./bootstrap-db.sql
 
-# TODO: mount volume for data persistence
-# TODO: option to run strapi db bootstrap psql commands
+# [TODO]: mount volume for data persistence?
 
-# TODO: connected pgadmin container!!
+# [TODO]: connected pgadmin container!
