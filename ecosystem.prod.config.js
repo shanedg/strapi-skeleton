@@ -12,6 +12,14 @@ module.exports = {
       env: {
         NODE_ENV: 'production',
       },
+      env_localdocker: {
+        DATABASE_HOST: 'postgres-ok',
+        DATABASE_PORT: 5432,
+        DATABASE_NAME: 'strapi-db',
+        DATABASE_USERNAME: 'strapi-user',
+        DATABASE_PASSWORD: 'strapi-user-alright',
+        DATABASE_SSL: false,
+      },
       exec_mode: 'cluster',
     },
   ],

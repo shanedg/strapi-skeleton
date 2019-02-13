@@ -26,3 +26,4 @@ EXPOSE 1337
 # RUN ls -al -R
 
 CMD [ "pm2-runtime", "start", "ecosystem.prod.config.js" ]
+# CMD [ "pm2-runtime", "start", "ecosystem.prod.config.js", "--env", "localdocker" ] ## dev testing
