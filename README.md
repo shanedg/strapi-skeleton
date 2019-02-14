@@ -29,6 +29,16 @@ psql postgres -f bootsrap-db.psql
 
 #### start strapi
 
+[TODO] replace explicit local exports with `.env` file or similar?
+
+first, set db test environment variables
+
+```bash
+export DATABASE_NAME=strapi-db
+export DATABASE_USERNAME=strapi-user
+export DATABASE_PASSWORD=strapi-user-alright
+```
+
 ```bash
 pm2 start ecosystem.config.js
 ```
@@ -75,7 +85,7 @@ docker run --name postgres-ok \
   -d strapi-postgres
 ```
 
-##### optional: run canonical postgres container
+##### optional: run canonical/other postgres container
 
 ###### get image and run
 
@@ -120,6 +130,10 @@ docker run -d \
   -p 1337:1337 \
   --net strapi-db-bridge \
   --name strapi-ok \
+  -e DATABASE_HOST=postgres-ok \
+  -e DATABASE_NAME=strapi-db \
+  -e DATABASE_USERNAME=strapi-user \
+  -e DATABASE_PASSWORD=strapi-user-alright \
   strapi
 ```
 
@@ -179,10 +193,6 @@ docker run -d -p 1337:1337 --name strapi-staging-ok strapi-staging
 TODO:
 
 <!-- ## misc
-standalone, does not run because can't link up to db:
-```bash
-docker run -p 80:1337 strapi-skeleton
-```
 ```bash
 docker exec -it some-strapi pm2 log
 docker exec -it some-strapi pm2 ls
