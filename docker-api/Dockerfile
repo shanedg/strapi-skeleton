@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node:alpine
 
 # Install pm2
 RUN npm install pm2 -g
