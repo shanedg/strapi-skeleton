@@ -17,7 +17,6 @@ COPY package.json .
 COPY package-lock.json .
 COPY server.js .
 COPY ecosystem.prod.config.js .
-# COPY ecosystem.config.js . ## dev testing
 COPY favicon.ico .
 
 # Install app dependencies
@@ -31,4 +30,3 @@ EXPOSE 1337
 # RUN ls -al -R
 
 CMD [ "pm2-runtime", "start", "ecosystem.prod.config.js" ]
-# CMD [ "pm2-runtime", "start", "ecosystem.config.js", "--env", "localdocker" ] ## dev testing
