@@ -172,25 +172,13 @@ docker image prune
 
 ### staging
 
-[TODO]: notes specific to heroku
-
-#### build image
-
-```bash
-docker build --file Dockerfile-staging -t strapi-staging .
-```
-
-#### run container
-
-```bash
-docker run -d -p 1337:1337 --name strapi-staging-ok strapi-staging
-```
+[TODO] notes specific to heroku staging on `master` branch and review apps on PR's opened to `master`.
 
 ### production
 
-`Dockerfile` and `Dockerfile-staging` images are more or less production-ready.
+`Dockerfile` image is more or less production-ready.
 
-TODO:
+[TODO] Caveats.
 
 <!-- ## misc
 ```bash
