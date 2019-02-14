@@ -1,5 +1,12 @@
 FROM node:lts-alpine
 
+# per: https://github.com/shanedg/strapi-skeleton/issues/31
+#
+# likely related to:
+# https://bitbucket.org/site/master/issues/16334/pipelines-failing-with-could-not-get-uid
+# https://github.com/npm/npm/issues/20861
+RUN npm config set unsafe-perm true
+
 # Install pm2
 RUN npm install pm2 -g
 
@@ -14,13 +21,6 @@ COPY package-lock.json .
 COPY server.js .
 COPY ecosystem.prod.config.js .
 COPY favicon.ico .
-
-# per: https://github.com/shanedg/strapi-skeleton/issues/31
-#
-# likely related to:
-# https://bitbucket.org/site/master/issues/16334/pipelines-failing-with-could-not-get-uid
-# https://github.com/npm/npm/issues/20861
-RUN npm config set unsafe-perm true
 
 # Install app dependencies
 ENV NPM_CONFIG_LOGLEVEL warn
