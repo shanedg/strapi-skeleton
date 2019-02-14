@@ -1,6 +1,4 @@
-FROM node:alpine
-
-# TODO: bring down image size with multi stage container build?
+FROM node:lts-alpine
 
 # Install pm2
 RUN npm install pm2 -g
@@ -27,6 +25,6 @@ RUN npm ci --production
 EXPOSE 1337
 
 # [debugging] Show current folder structure in logs
-# RUN ls -al -R
+# RUN pwd && ls -al
 
 CMD [ "pm2-runtime", "start", "ecosystem.prod.config.js" ]
