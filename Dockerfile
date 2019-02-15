@@ -13,21 +13,24 @@ RUN npm config set unsafe-perm true
 
 WORKDIR /app/strapi-skeleton
 
-# Bundle APP files
-COPY admin admin/
-COPY api api/
-COPY config config/
-COPY plugins plugins/
-COPY public public/
+# necessary for `npm install`
 COPY package.json .
 COPY package-lock.json .
-COPY server.js .
-COPY favicon.ico .
+# necessary for postinstall script
+COPY admin admin/
+COPY plugins plugins/
 
 # Install app dependencies
 ENV NPM_CONFIG_LOGLEVEL warn
 ENV NODE_ENV production
 RUN npm ci
+
+# Bundle APP files
+COPY favicon.ico .
+COPY public public/
+COPY config config/
+COPY server.js .
+COPY api api/
 
 # Expose the listening port of your app
 EXPOSE 1337
