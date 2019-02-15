@@ -2,13 +2,14 @@
 
 A quick description of strapi-skeleton.
 
+[TODO] table of contents
+
 ## no-docker
 
 ### install
 
 ```bash
 npm install
-npm install -g pm2
 ```
 
 ### run
@@ -40,7 +41,13 @@ export DATABASE_PASSWORD=strapi-user-alright
 ```
 
 ```bash
-pm2 start ecosystem.config.js
+npm start
+```
+
+aka
+
+```bash
+node server.js
 ```
 
 #### view strapi app
@@ -52,9 +59,25 @@ localhost:1337/admin
 
 #### teardown
 
+`ctrl+c` to kill node process
+
+[TODO] other ways to kill node/ways that node might need to be killed, e.g. if daemonized/running in background
+
 ```bash
-pm2 stop strapi-skeleton-dev
 brew services stop postgresql
+```
+
+#### [advanced] using pm2 as a process manager
+
+[TODO] add motivation and caveats around using pm2 (or another process manager like forever.js) to run the application;
+especially as it relates to official guidance against running applications via process managers in docker containers.
+
+[TODO] `ecosystem.config.js` vs `ecosystem.prod.config.js`
+
+```bash
+npm install -g pm2
+pm2 start ecosystem.config.js
+pm2 stop strapi-skeleton-dev
 pm2 kill
 ```
 
@@ -87,8 +110,6 @@ docker run --name postgres-ok \
 
 ##### optional: run canonical/other postgres container
 
-###### get image and run
-
 ```bash
 docker pull postgres
 ```
@@ -99,8 +120,6 @@ docker run --name postgres-ok \
   -e POSTGRES_PASSWORD=pg-user-alright \
   -d postgres
 ```
-
-###### psql to configure postgres db for strapi
 
 ```bash
 docker run -it \
@@ -140,16 +159,8 @@ docker run -d \
 #### view strapi application logs in container
 
 ```bash
-docker exec -it strapi-ok pm2 log
+docker logs strapi-ok
 ```
-
-```bash
-docker exec -it strapi-ok pm2 monit
-docker exec -it strapi-ok \
-  pm2 restart ecosystem.prod.config.js --update-env
-```
-
-`--update-env` is optional and [reloads pm2 config](https://pm2.io/doc/en/runtime/guide/ecosystem-file/#updating-the-environment) in `ecosystem.config.js`
 
 #### view docker strapi app
 
@@ -167,6 +178,7 @@ docker container prune
 docker network rm bridge strapi-db-bridge
 docker network prune
 docker image rm strapi
+docker image rm strapi-postgres
 docker image prune
 ```
 
@@ -179,11 +191,3 @@ docker image prune
 `Dockerfile` image is more or less production-ready.
 
 [TODO] Caveats.
-
-<!-- ## misc
-```bash
-docker exec -it some-strapi pm2 log
-docker exec -it some-strapi pm2 ls
-docker exec -it some-strapi pm2 monit
-```
--->
