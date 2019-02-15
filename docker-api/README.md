@@ -8,6 +8,8 @@ this is desirable both for space savings (>40%) and reduced complexity of fewer 
 
 ## build api-only image
 
+from project root
+
 ```bash
 docker build --file docker-api/Dockerfile -t strapi-api .
 ```
@@ -20,5 +22,13 @@ i.e. running `docker build` from `docker-api/` will create path problems.
 ## run api-only container
 
 ```bash
-docker run -d -p 1337:1337 --net strapi-db-bridge --name strapi-api-ok strapi-api
+docker run -d \
+  -p 1337:1337 \
+  --net strapi-db-bridge \
+  --name strapi-api-ok \
+  -e DATABASE_HOST=postgres-ok \
+  -e DATABASE_NAME=strapi-db \
+  -e DATABASE_USERNAME=strapi-user \
+  -e DATABASE_PASSWORD=strapi-user-alright \
+  strapi-api
 ```
