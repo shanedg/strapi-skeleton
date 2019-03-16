@@ -2,7 +2,31 @@
 
 A quick description of strapi-skeleton.
 
-[TODO] table of contents
+[no docker](#no-docker)
+
+* [install](#install)
+* [run](#run)
+  1. [start-postgres](#start-postgres)
+  2. [psql](#psql)
+  3. [start strapi](#start-strapi)
+  4. [view strapi app](#view-strapi-app)
+  5. [teardown](#teardown)
+* [process management](#process-management)
+
+[docker](#docker)
+
+* [local](#local)
+  1. [create docker bridge network for strapi and db to communicate over](#create-docker-bridge-network-for-strapi-and-db-to-communicate-over)
+  2. [postgres](#postgres)
+      * [customize postgres image](#customize-postgres-image)
+      * [optional run canonical postgres container](#optional-run-canonicalother-postgres-container)
+  3. [build strapi image](#build-strapi-image)
+  4. [run strapi container](#run-strapi-container)
+      * [view strapi application logs](#view-strapi-application-logs)
+  5. [view docker strapi app](#view-docker-strapi-app)
+  6. [teardown docker](#teardown-docker)
+* [staging](#staging)
+* [production](#production)
 
 ## no-docker
 
@@ -64,11 +88,13 @@ localhost:1337/admin
 [todo] other ways to kill node/ways that node might need to be killed
 e.g. if daemonized/running in background
 
+[todo] drop strapi database
+
 ```bash
 brew services stop postgresql
 ```
 
-#### [advanced] using pm2 as a process manager
+### process management
 
 [todo] add motivation and caveats around using **pm2** or **forever.js**, etc.
 especially re: official guidance against process managers in docker containers.
@@ -84,7 +110,7 @@ pm2 kill
 
 ## docker
 
-### localhost
+### local
 
 #### create docker bridge network for strapi and db to communicate over
 
@@ -159,7 +185,7 @@ docker run -d \
   strapi
 ```
 
-#### view strapi application logs in container
+##### view strapi application logs
 
 ```bash
 docker logs strapi-ok
