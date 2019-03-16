@@ -30,7 +30,7 @@ psql postgres -f bootsrap-db.psql
 
 #### start strapi
 
-[TODO] replace explicit local exports with `.env` file or similar?
+[todo] replace explicit local exports with `.env` file or similar?
 
 first, set db test environment variables
 
@@ -61,7 +61,8 @@ localhost:1337/admin
 
 `ctrl+c` to kill node process
 
-[TODO] other ways to kill node/ways that node might need to be killed, e.g. if daemonized/running in background
+[todo] other ways to kill node/ways that node might need to be killed
+e.g. if daemonized/running in background
 
 ```bash
 brew services stop postgresql
@@ -69,10 +70,10 @@ brew services stop postgresql
 
 #### [advanced] using pm2 as a process manager
 
-[TODO] add motivation and caveats around using pm2 (or another process manager like forever.js) to run the application;
-especially as it relates to official guidance against running applications via process managers in docker containers.
+[todo] add motivation and caveats around using **pm2** or **forever.js**, etc.
+especially re: official guidance against process managers in docker containers.
 
-[TODO] `ecosystem.config.js` vs `ecosystem.prod.config.js`
+[todo] `ecosystem.config.js` vs `ecosystem.prod.config.js`
 
 ```bash
 npm install -g pm2
@@ -184,10 +185,10 @@ docker image prune
 
 ### staging
 
-[TODO] notes specific to heroku staging on `master` branch and review apps on PR's opened to `master`.
+[todo] heroku staging on `master` branch and review apps on PR's opened to same.
 
 ### production
 
 `Dockerfile` image is more or less production-ready.
 
-[TODO] Caveats.
+[todo] Caveats.

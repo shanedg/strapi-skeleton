@@ -17,7 +17,7 @@ docker build --file docker-api/Dockerfile -t strapi-api .
 Note, the directory that this command is run from must be the build context.
 i.e. running `docker build` from `docker-api/` will create path problems.
 
-[TODO] research around and motivation for running build from project root.
+[todo] research around and motivation for running build from project root.
 
 ## run api-only container
 
