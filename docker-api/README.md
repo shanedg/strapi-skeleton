@@ -4,7 +4,7 @@ the strapi api's do not require the admin and plugins ecosystem to respond to re
 here we can shave maybe 100 MB off of the resulting image by only including the api's.
 
 for high request volumes, we can scale instances of this container.
-this is desirable both for space savings (>40%) and reduced complexity of fewer moving parts.
+this is desirable both for space savings (>40%) and reduced complexity.
 
 ## build api-only image
 
@@ -17,7 +17,7 @@ docker build --file docker-api/Dockerfile -t strapi-api .
 Note, the directory that this command is run from must be the build context.
 i.e. running `docker build` from `docker-api/` will create path problems.
 
-[TODO] research around and motivation for running build from project root.
+[todo] research around and motivation for running build from project root.
 
 ## run api-only container
 

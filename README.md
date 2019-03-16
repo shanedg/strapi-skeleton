@@ -2,7 +2,31 @@
 
 A quick description of strapi-skeleton.
 
-[TODO] table of contents
+[no docker](#no-docker)
+
+* [install](#install)
+* [run](#run)
+  1. [start-postgres](#start-postgres)
+  2. [psql](#psql)
+  3. [start strapi](#start-strapi)
+  4. [view strapi app](#view-strapi-app)
+  5. [teardown](#teardown)
+* [process management](#process-management)
+
+[docker](#docker)
+
+* [local](#local)
+  1. [create docker bridge network for strapi and db to communicate over](#create-docker-bridge-network-for-strapi-and-db-to-communicate-over)
+  2. [postgres](#postgres)
+      * [customize postgres image](#customize-postgres-image)
+      * [optional run canonical postgres container](#optional-run-canonicalother-postgres-container)
+  3. [build strapi image](#build-strapi-image)
+  4. [run strapi container](#run-strapi-container)
+      * [view strapi application logs](#view-strapi-application-logs)
+  5. [view docker strapi app](#view-docker-strapi-app)
+  6. [teardown docker](#teardown-docker)
+* [staging](#staging)
+* [production](#production)
 
 ## no-docker
 
@@ -30,7 +54,7 @@ psql postgres -f bootsrap-db.psql
 
 #### start strapi
 
-[TODO] replace explicit local exports with `.env` file or similar?
+[todo] replace explicit local exports with `.env` file or similar?
 
 first, set db test environment variables
 
@@ -61,18 +85,21 @@ localhost:1337/admin
 
 `ctrl+c` to kill node process
 
-[TODO] other ways to kill node/ways that node might need to be killed, e.g. if daemonized/running in background
+[todo] other ways to kill node/ways that node might need to be killed
+e.g. if daemonized/running in background
+
+[todo] drop strapi database
 
 ```bash
 brew services stop postgresql
 ```
 
-#### [advanced] using pm2 as a process manager
+### process management
 
-[TODO] add motivation and caveats around using pm2 (or another process manager like forever.js) to run the application;
-especially as it relates to official guidance against running applications via process managers in docker containers.
+[todo] add motivation and caveats around using **pm2** or **forever.js**, etc.
+especially re: official guidance against process managers in docker containers.
 
-[TODO] `ecosystem.config.js` vs `ecosystem.prod.config.js`
+[todo] `ecosystem.config.js` vs `ecosystem.prod.config.js`
 
 ```bash
 npm install -g pm2
@@ -83,7 +110,7 @@ pm2 kill
 
 ## docker
 
-### localhost
+### local
 
 #### create docker bridge network for strapi and db to communicate over
 
@@ -95,7 +122,7 @@ docker network create --driver bridge strapi-db-bridge
 
 ##### customize [postgres image](https://hub.docker.com/_/postgres/)
 
-specifically, our custom postgres image bootstraps strapi user/db/permissions on init
+this custom postgres image bootstraps strapi user/db/permissions on init
 
 ```bash
 docker build --file docker-postgres/Dockerfile -t strapi-postgres .
@@ -142,7 +169,9 @@ GRANT ALL ON DATABASE "strapi-db" TO "strapi-user";
 docker build -t strapi .
 ```
 
-#### run strapi container, connecting to custom bridge network and exposing port 1337 on container as port 1337 on localhost
+#### run strapi container
+
+connect to custom bridge network, expose port 1337 on container as port 1337 on localhost
 
 ```bash
 docker run -d \
@@ -156,7 +185,7 @@ docker run -d \
   strapi
 ```
 
-#### view strapi application logs in container
+##### view strapi application logs
 
 ```bash
 docker logs strapi-ok
@@ -184,10 +213,10 @@ docker image prune
 
 ### staging
 
-[TODO] notes specific to heroku staging on `master` branch and review apps on PR's opened to `master`.
+[todo] heroku staging on `master` branch and review apps on PR's opened to same.
 
 ### production
 
 `Dockerfile` image is more or less production-ready.
 
-[TODO] Caveats.
+[todo] Caveats.

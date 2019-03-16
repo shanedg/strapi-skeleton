@@ -25,7 +25,7 @@ ENV NPM_CONFIG_LOGLEVEL warn
 ENV NODE_ENV production
 RUN npm ci
 
-# Bundle APP files
+# Bundle app files
 COPY favicon.ico .
 COPY public public/
 COPY config config/
@@ -35,7 +35,7 @@ COPY api api/
 # Expose the listening port of your app
 EXPOSE 1337
 
-# [debugging] Show current folder structure in logs
+# [debug] Show current folder structure in logs
 # RUN pwd && ls -al
 
 CMD [ "node", "server.js"]
