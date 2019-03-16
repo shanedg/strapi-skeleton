@@ -96,7 +96,7 @@ docker network create --driver bridge strapi-db-bridge
 
 ##### customize [postgres image](https://hub.docker.com/_/postgres/)
 
-specifically, our custom postgres image bootstraps strapi user/db/permissions on init
+this custom postgres image bootstraps strapi user/db/permissions on init
 
 ```bash
 docker build --file docker-postgres/Dockerfile -t strapi-postgres .
@@ -143,7 +143,9 @@ GRANT ALL ON DATABASE "strapi-db" TO "strapi-user";
 docker build -t strapi .
 ```
 
-#### run strapi container, connecting to custom bridge network and exposing port 1337 on container as port 1337 on localhost
+#### run strapi container
+
+connect to custom bridge network, expose port 1337 on container as port 1337 on localhost
 
 ```bash
 docker run -d \
