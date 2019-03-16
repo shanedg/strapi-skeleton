@@ -46,7 +46,7 @@ module.exports = {
       qb.offset(filters.start);
       qb.limit(filters.limit);
     }).fetchAll({
-      withRelated: populate || populate
+      withRelated: filters.populate || populate
     });
   },
 
@@ -236,7 +236,7 @@ module.exports = {
         qb.limit(_.toNumber(filters.limit));
       }
     }).fetchAll({
-      width: populate
+      withRelated: populate
     });
   }
 };
